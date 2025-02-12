@@ -1,8 +1,10 @@
 //import React from 'react'
 
-const Cart = () => {
+const Cart = (CartAllProduct,setCartAllProduct) => {
+  console.log("filteredObject",CartAllProduct)
   return (
-    <div>Cart</div>
+    <>
+    cart </>
   )
 }
 
