@@ -20,9 +20,31 @@ const Home = () => {
 
   return (
    <div className="container-fluid px-5 mt-5">
-    <div className="row">
+    <div className="row gap-5 justify-content-center">
        {
-        
+        productList?.map((product,index) => {
+          console.log("product",product)
+          return(
+        <div className="col-2 border rounded mt-2">
+      <div className="d-flex justify-content-center p-2">
+        <img src={data?.img} alt="" className="product-size"/>
+      </div>
+      <div>
+      <div className="d-flex justify-content-between px-2">
+        <p className="m-0 font-bold" >{data?.brand}</p>
+        <p className="m-0 font-bold">{data?.model}</p>
+      </div> 
+      <div className="px-2">
+        <p className="m-0 "><span className="font-bold"></span>₹{data?.price}</p>
+        <p className="m-0 text-hiding">₹{data?.space}</p>
+      </div>
+      <div className="px-2 mt-3">
+        <button className="btn btn-primary p-1 w-100">Add to cart</button>
+      </div>
+      </div>
+    </div>
+          )
+        })
        }
     <div className="col-2 border rounded">
       <div className="d-flex justify-content-center p-2">
