@@ -1,5 +1,6 @@
 //import React from 'react'
 import productList from "./Data";
+import toast, { Toaster } from 'react-hot-toast';
 
 const Home = ({setProductId}) => {
 //   const data =  {
@@ -17,15 +18,16 @@ const Home = ({setProductId}) => {
 //     isTrending:false,
 //     description:"1 Year Manufacturer Warranty for Phone and 6 Months Warranty for in the Box"
 // }
-     const handleAddToCart =(id)=>{
-      // alert("Product Added",id)
-      console.log("clicked",id)
-      setProductId();
+     const handleAddToCart =( id )=>{
+    
+      setProductId(id);
+      toast.success('Product addded sucessfully!!');
      }
    
   return (
    <div className="container-fluid px-5 mt-5">
     <div className="row gap-5 justify-content-center">
+      <Toaster/>
        {
         productList?.map((product,index) => {
           // console.log("product",product)

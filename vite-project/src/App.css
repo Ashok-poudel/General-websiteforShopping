@@ -1,3 +1,14 @@
+body {
+  background-color: rgb(202, 206, 224);
+}
+/* .page-orange {
+  background-color: orange;
+}
+
+.page-black {
+  background-color: black;
+} */
+
 .pointer{
   cursor: pointer;
 }
@@ -16,3 +27,18 @@
 .font-size-12{
   font-size: 12px;
 }
+.cart-product-size{
+  height : 190px;
+  width : 152px
+}
+.increment-button{
+  height: 20px;
+  width: 20px;
+}
+.count{
+  padding: 2px 9px;
+ }
+ 
+ .right{
+   right: 10%;
+ }

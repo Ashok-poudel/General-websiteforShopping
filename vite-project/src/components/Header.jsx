@@ -1,6 +1,6 @@
 //import React from 'react'
 import { NavLink } from "react-router-dom"
-export const Header = () => {
+export const Header = ({cartAllProduct}) => {
   return (
 <div className="container-fluid ">
     <div className="row ">
@@ -13,10 +13,16 @@ export const Header = () => {
                <li className="list-unstyled text-light p-0 pointer">CONTACT</li>
                
             </ul>
-            <ul className="m-0 p-0 py-3">
+            <ul className="m-0 p-0 py-3 position-relative">
             <NavLink to ="/cart"className="list-unstyled text-light p-0">
                 
                 <i className="fa-solid fa-cart-shopping fs-3"></i>
+                <span
+              className="text-decoration-none count rounded-pill text-dark position-absolute top-0 roght"
+              style={{ backgroundColor: "orange", right:'-45%' }}
+            >
+              {cartAllProduct?.length}
+            </span>
             </NavLink>
             </ul>
         </div>

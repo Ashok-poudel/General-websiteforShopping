@@ -22,7 +22,7 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-        <Header />
+        <Header cartAllProduct={cartAllProduct} />
         <Routes>
           <Route path="/" element={<Home setProductId={setProductId} />} />
           <Route path="/cart" element={<Cart cartAllProduct={cartAllProduct} setCartAllProduct={setCartAllProduct}/>} />
