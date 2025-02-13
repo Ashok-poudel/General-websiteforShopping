@@ -9,10 +9,12 @@ export const Header = ({cartAllProduct}) => {
             <ul className="d-flex gap-5  align-items-center m-0  p-0 py-2">
 
                 <NavLink to="/"className="list-unstyled text-light p-0 pointer text-decoration-none">HOME</NavLink>
-               <li className="list-unstyled text-light p-0 pointer ">ABOUT</li>
-               <li className="list-unstyled text-light p-0 pointer">CONTACT</li>
+               <NavLink to ="/About" className="list-unstyled text-light p-0 pointer text-decoration-none ">ABOUT</NavLink>
+               <NavLink to="/Contact"className="list-unstyled text-light p-0 pointer text-decoration-none">CONTACT</NavLink>
+               <NavLink to="/Location"className="list-unstyled text-light p-0 pointer text-decoration-none">LOCATION</NavLink>
                
             </ul>
+            
             <ul className="m-0 p-0 py-3 position-relative">
             <NavLink to ="/cart"className="list-unstyled text-light p-0">
                 

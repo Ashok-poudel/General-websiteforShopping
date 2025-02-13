@@ -6,6 +6,10 @@ import Cart from "./components/Cart"
 import {BrowserRouter,Route,Routes} from "react-router-dom"
 import { useEffect, useState } from "react"
 import productList from "./components/Data"
+import Location from "./components/Location"
+import Contact from "./components/Contact"
+import About from "./components/About"
+import Footer from "./components/Footer"
 
 const App = () => {
    
@@ -25,9 +29,15 @@ const App = () => {
         <Header cartAllProduct={cartAllProduct} />
         <Routes>
           <Route path="/" element={<Home setProductId={setProductId} />} />
-          <Route path="/cart" element={<Cart cartAllProduct={cartAllProduct} setCartAllProduct={setCartAllProduct}/>} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={< About />} />
+          <Route path="/location" element={<Location />} />
+         
+         <Route path="/cart" element={<Cart cartAllProduct={cartAllProduct} setCartAllProduct={setCartAllProduct}/>} />
         </Routes>
+        
       </BrowserRouter>
+     <Footer/>
     </>
   )
 }

@@ -42,3 +42,18 @@ body {
  .right{
    right: 10%;
  }
+ .checked {
+  color: orange;
+}
+
+.loc-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px; /* Adjust the size */
+  height: 150px; /* Adjust the size */
+  border-radius: 50%; /* Makes the image circular */
+  border: 5px solid black; /* Adds a solid black border */
+  object-fit: cover; /* Ensures the image fits well inside the circle */
+  background-color: aqua;
+}
